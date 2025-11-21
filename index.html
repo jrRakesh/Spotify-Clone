@@ -1,32 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utility.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+  </head>
+  <body>
     <div class="container flex">
-        <div class="left border ">
-            <div class="home bg-grey rounded m-1 p-1">
-                <img class="invert" src="logo.svg" alt="logo">
-                <ul>
-                    <li><img class="invert" src="home.svg" alt="Home">Home</li>
-                    <li><img class="invert" src="search.svg" alt="Search">Search</li>
-                </ul>
-            </div>
-            <div class="library bg-grey rounded m-1 p-1">
-                <div class="heading">
-               <img class="invert" src="playlist.svg" alt="playlist">
-               <h2>Your Library</h2>
-               </div>
-            </div>
+      <div class="left">
+        <div class="home bg-grey rounded m-1 p-1">
+          <img class="invert" src="images/logo.svg" alt="logo" />
+          <ul>
+            <li><img class="invert" src="images/home.svg" alt="Home" />Home</li>
+            <li>
+              <img class="invert" src="images/search.svg" alt="Search" />Search
+            </li>
+          </ul>
         </div>
-        <div class="right border">
-            hijklmnopqrstuvwxyz
+        <div class="library bg-grey rounded m-1 p-1">
+          <div class="heading">
+            <img class="invert" src="images/playlist.svg" alt="playlist" />
+            <h2>Your Library</h2>
+          </div>
         </div>
+      </div>
+      <div class="right bg-grey">
+        <div class="header rounded m-1 p-1">
+          <div class="nav">
+            <img src="images/left-arrow.png" class="invert" alt="left-arrow" />
+            <img
+              src="images/right-arrow.png"
+              class="invert"
+              alt="right-arrow"
+            />
+          </div>
+          <div class="buttons">
+            <button class="signupbtn">Sign up</button>
+            <button class="loginbtn">Log in</button>
+          </div>
+        </div>
+        <div class="spotifyPlaylists">
+          <h1>Spotify Playlists</h1>
+          <div class="cardContainer">
+
+            <div class="card">
+              <div class="play">
+                <img src="images/play.svg" alt="play" />
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e02009e6824cb79b7325f25510c"
+                alt=""
+              />
+              <h2>Marijau</h2>
+              <p>Bikki Gurung</p>
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>
