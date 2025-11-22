@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.left {
+  margin: 3px 0;
+  width: 25vw;
+}
+.right {
+  margin: 3px 0;
+  width: 75vw;
+  position: relative;
+}
+
+.home {
+  padding: 20px;
+}
+
+.home ul li {
+  display: flex;
+  width: 14px;
+  list-style: none;
+  gap: 14px;
+  padding-top: 14px;
+  font-weight: bold;
+}
+
+.library {
+  min-height: 80vh;
+}
+
+.heading {
+  display: flex;
+  width: 100%;
+  gap: 14px;
+  padding-top: 14px;
+  font-weight: bold;
+  align-items: center;
+  font-size: 13px;
+}
+
+.heading img {
+  width: 25px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #242424;
+  height: 70px;
+}
+
+.header > * {
+  padding: 20px;
+}
+
+.header .nav {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header .nav img {
+  width: 14px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.buttons > * {
+  margin: 0 12px;
+}
+.signupbtn {
+  background-color: #242424;
+  color: #a1a1a1;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.signupbtn:hover {
+  font-size: 17px;
+  color: white;
+  cursor: pointer;
+}
+
+.loginbtn {
+  padding: 14px;
+  background-color: white;
+  color: black;
+  border-radius: 27px;
+  width: 104px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.loginbtn:hover {
+  background-color: rgb(232, 232, 232);
+  font-size: 17px;
+  cursor: pointer;
+}
+.spotifyPlaylists {
+  padding: 16px;
+}
+
+.cardContainer {
+  margin: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-height: 70vh;
+  overflow-y: scroll;
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #1f1f1f;
+}
+
+.play {
+  position: absolute;
+  bottom: 70px;
+  right: 20px;
+}
+
+.card img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.playbar{
+  
+  position: absolute;
+  bottom: 0;
+  background-color: aquamarine;
+  width: 100%;
+  padding: 12px;
+}
+
+.playButtons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.playButtons img{
+  width: 16px;
+}
+
+.playButtons .play-button{
+  width: 30px;
+}
