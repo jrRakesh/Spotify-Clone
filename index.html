@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utility.css" />
   </head>
@@ -23,6 +24,11 @@
           <div class="heading">
             <img class="invert" src="images/playlist.svg" alt="playlist" />
             <h2>Your Library</h2>
+          </div>
+          <div class="songList">
+            <ul>
+             
+            </ul>
           </div>
         </div>
       </div>
@@ -60,16 +66,26 @@
         </div>
 
         <div class="playbar">
+          <div class="seekbar">
+            <div class="circle"></div>
+          </div>
+
+          <div class="aboveBar">
           <div class="songInfo">
+            <div class="songName"></div>
 
           </div>
-          <div class="playButtons">
-            <img src="images/next-button.png" alt="next-song">
-            <img class="play-button" src="images/play-button.png" alt="play-song">
-            <img src="images/previous-button.png" alt="previous-song">
+
+          
+          <div class="songButtons">
+            <img id="previous" src="images/previous-button.png" alt="previous-song">
+            <img id="playButton" src="images/play-button.png" alt="play-song">
+            
+            <img id="next" src="images/next-button.png" alt="next-song">
           </div>
           <div class="songTime">
             
+          </div>
           </div>
         </div>
       </div>
