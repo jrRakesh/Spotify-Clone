@@ -165,7 +165,7 @@ body {
   gap: 10px;
   flex-wrap: wrap;
   max-height: 70vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .card {
@@ -188,18 +188,18 @@ body {
 }
 
 .playbar{
-  
   position: fixed;
   bottom: 10px;
   background-color: #fff;
   width: 72vw;
   padding: 20px;
   filter: invert(1);
+  min-height: 40px;
 }
 
 .seekbar{
   height: 2px;
-  width: 98%;
+  width: 71vw;
   background-color: #a1a1a1;
   border: 2px solid #a1a1a1;
   border-radius: 10px;
@@ -297,6 +297,25 @@ body {
   }
 
   .playbar{
-    width: 95vw;
+    background-color: rgb(37, 36, 36);
+    width: calc(100vw - 50px);
+    
+  }
+
+  .seekbar{
+    width: calc(100vw - 70px);
+  }
+  
+  .cardContainer{
+    margin: 0;
+    justify-content: center;
+  }
+
+  .card{
+    width: 90vw;
   }
 }
+
+
+
+/* 03:25:00 */
