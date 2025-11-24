@@ -114,7 +114,7 @@ async function main() {
     
     //listening close button
     document.querySelector(".close").addEventListener("click", () => {
-      document.querySelector(".left").style.left = -100 + "%"
+      document.querySelector(".left").style.left = -120 + "%"
     })
 }
 
