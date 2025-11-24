@@ -99,6 +99,10 @@ body {
   height: 70px;
 }
 
+.hamburger{
+  width: 30px;
+}
+
 .header > * {
   padding: 20px;
 }
@@ -211,7 +215,7 @@ body {
   background-color: black;
   position: relative;
   bottom: 5.5px;
-  transition: left 0.5s;
+  transition: left 0.1s;
   left: 0%;
   
 }
@@ -270,4 +274,29 @@ body {
 }
 
 
-/* 02:48:00 */
+@media screen and (max-width: 1200px) {
+  .left {
+    background-color: black;
+    position: absolute;
+    left: -100%;
+    transition: all 0.3s;
+    z-index: 1;
+    width: 300px;
+  }
+
+  .close{
+  position: absolute;
+  right: 20px;
+  top: 25px;
+ 
+
+  }
+
+  .right{
+    width: 100vw;
+  }
+
+  .playbar{
+    width: 95vw;
+  }
+}

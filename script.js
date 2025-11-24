@@ -99,6 +99,23 @@ async function main() {
     document.querySelector(".circle").style.left =
       (currentSong.currentTime / currentSong.duration) * 100 + "%";
   });
+
+    //lsitening the seekbar
+  document.querySelector(".seekbar").addEventListener("click", e => {
+        let percent = (e.offsetX / e.target.getBoundingClientRect().width) * 100;
+        document.querySelector(".circle").style.left = percent + "%";
+        currentSong.currentTime = ((currentSong.duration) * percent) / 100
+    })
+
+    //listening hamburger
+    document.querySelector(".nav").addEventListener("click", () => {
+      document.querySelector(".left").style.left = 0 + "%"
+    })
+    
+    //listening close button
+    document.querySelector(".close").addEventListener("click", () => {
+      document.querySelector(".left").style.left = -100 + "%"
+    })
 }
 
 main();
