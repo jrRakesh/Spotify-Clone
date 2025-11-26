@@ -215,7 +215,7 @@ body {
 
 .playbar {
   position: fixed;
-  bottom: 10px;
+  bottom: 0px;
   background-color: #fff;
   width: 72vw;
   padding: 20px;
@@ -315,6 +315,7 @@ body {
     transition: all 0.3s;
     z-index: 1;
     width: 300px;
+    
   }
 
   .close {
@@ -367,9 +368,18 @@ body {
 
 @media screen and (max-width: 600px) {
 
+  .left{
+    position: fixed;
+    top: 0;
+  }
+
   .cardContainer{
     display: flex;
-  justify-content: center;
+    justify-content: center;
+    max-height: unset;
+    overflow-y: unset;
+    margin-bottom: 35vh;
+  
   }
 
 .card{
@@ -400,5 +410,41 @@ body {
   .range input{
     width: 50px;
   }
+
+}
+
+@media screen and (max-width: 400px){
+
+  .cardContainer{
+height: 55vh;
+  }
+
+   .card {
+        width: 100%;
+    }
+
+    .header>* {
+        padding: 2px;
+    }
+
+    .buttons>* {
+        margin: 0 6px;
+    }
+
+    .header{
+        padding: 7px;
+    }
+
+    .spotifyPlaylists h1 {
+        padding: 4px;
+    }
+
+    .library{
+        height: 85vh;
+    }
+
+    .left{ 
+        width: 100vw;
+    }
 
 }
