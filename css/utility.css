@@ -66,3 +66,9 @@
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
+
+@media screen and (max-width: 600px) {
+    ::-webkit-scrollbar {
+  display: none;
+}
+}

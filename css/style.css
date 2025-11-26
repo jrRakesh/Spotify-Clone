@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+:root{
+  --a:0;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -178,16 +183,32 @@ body {
 
 .card {
   position: relative;
-  width: 250px;
+  width: 175px;
   padding: 10px;
-  border-radius: 5px;
-  background-color: #1f1f1f;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.9s;
+}
+
+.card img{
+  border-radius: 12px;
+}
+
+.card:hover{
+ background-color: #2e2e2e;
+ --a: 1;
 }
 
 .play {
   position: absolute;
   bottom: 70px;
   right: 20px;
+  cursor: pointer;
+  opacity: var(--a);
+}
+
+.play:hover{
+  cursor: p;
 }
 
 .card img {
@@ -314,12 +335,7 @@ body {
   }
 
   .cardContainer {
-    margin: 0;
-    justify-content: center;
-  }
-
-  .card {
-    width: 90vw;
+    margin: 10;
   }
 
   .close {
@@ -337,7 +353,39 @@ body {
   .volume {
     width: 15px;
   }
+
+  
 }
 
+@media screen and (max-width: 600px) {
 
-/* 4:02:00 */
+.card{
+    width: 300px;
+  }
+
+  .songInfo{
+    width: ;
+    font-size: 10px;
+  }
+
+  .songButtons{
+    width: 150px;
+  }
+
+  .songButtons img{
+    width: 15px;
+  }
+
+  .songButtons #playButton{
+    width: 20px;
+  }
+
+  .volume img{
+    width: 15px;
+  }
+
+  .range input{
+    width: 50px;
+  }
+
+}
