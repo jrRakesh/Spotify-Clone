@@ -177,7 +177,7 @@ body {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  max-height: 70vh;
+  max-height: 64vh;
   overflow-y: auto;
 }
 
@@ -205,10 +205,7 @@ body {
   right: 20px;
   cursor: pointer;
   opacity: var(--a);
-}
-
-.play:hover{
-  cursor: p;
+  transition: ease-out 0.9s;
 }
 
 .card img {
@@ -286,6 +283,7 @@ body {
   gap: 40px;
   width: 250px;
   color: black;
+   
 }
 
 .volume {
@@ -293,6 +291,12 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  cursor: pointer;
+ 
+}
+
+.range input{
+  cursor: pointer;
 }
 
 .songTime {
@@ -354,13 +358,22 @@ body {
     width: 15px;
   }
 
+  .spotifyPlaylists h1{
+    font-size: 25px;
+  }
+
   
 }
 
 @media screen and (max-width: 600px) {
 
+  .cardContainer{
+    display: flex;
+  justify-content: center;
+  }
+
 .card{
-    width: 300px;
+    width: 400px;
   }
 
   .songInfo{
