@@ -230,8 +230,9 @@ body {
   border: 2px solid #a1a1a1;
   border-radius: 10px;
   position: absolute;
-  bottom: 0;
+  bottom: 8px;
   cursor: pointer;
+  margin-bottom: 8px;
 }
 
 .circle {

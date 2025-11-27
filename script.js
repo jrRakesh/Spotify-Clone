@@ -117,7 +117,7 @@ async function displayAlbums() {
 }
 
 async function main() {
-  await getSongs("songs/hindi");
+  await getSongs("songs/Nepali");
   playMusic(songs[0], true);
 
 
